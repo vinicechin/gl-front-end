@@ -1,3 +1,87 @@
-.btn-margin {
-  margin: 7px 3px;
+body {
+  height: 100%;
+  /* background: url('../public/images/mock_background.png'); */
+  background-size: cover;
+}
+
+.back {
+  background: url('../public/images/mock_back2.png');
+}
+
+.app-container {
+  height: 100%;
+}
+
+.navbar-header {
+  width: 100%;
+}
+
+.navbar {
+  background-color: transparent;
+  border: 0px;
+  margin: 50px 0px 0px 0px;
+}
+
+.brokerage-engine-icon {
+  background: url('../public/images/brokerage_engine_logo.png');
+  background-size: cover;	
+  height: 29.06px;	
+  width: 180px;
+  margin-left: 195px;
+}
+
+.brokerage-note-icon {
+  background: url('../public/images/Image.png');
+  background-size: cover;
+  height: 342px;	
+  width: 714px;
+  margin-left: 410px;
+}
+
+.brokerage-login-icon {
+  background: url('../public/images/Button.png');
+  background-size: cover;
+  height: 110px;
+  width: 240px;
+  margin-left:-32px;
+}
+
+.brokerage-logout-icon {
+  background: url('../public/images/Logout.png');
+  background-size: cover;
+  height: 110px;
+  width: 240px;
+  margin-left:-32px;
+}
+
+.main-container {
+  margin-left: 195px;
+  margin-top: 262px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main-tittle {
+  height: 53px;	
+  width: 311px;	
+  color: #2A2C2A;	
+  font-family: "Roboto";	
+  font-size: 45px;	
+  font-weight: 900;	
+  line-height: 53px;
+}
+
+.main-info {
+  height: 115px;	
+  width: 336px;	
+  color: #939393;	
+  font-family: "Roboto";	
+  font-size: 18px;	
+  font-weight: 300;	
+  line-height: 21px;
+}
+
+.main-login-btn {
+
 }

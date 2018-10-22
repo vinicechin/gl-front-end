@@ -76,7 +76,7 @@ export default class Auth {
     localStorage.removeItem('expires_at');
     this.userProfile = null;
     this.auth0.logout({
-      returnTo: 'http://localhost:3000/',
+      returnTo: 'http://localhost:3000/home',
     })
   }
 

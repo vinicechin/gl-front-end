@@ -9,6 +9,11 @@ class Home extends Component {
 
   componentDidMount() {
     this.securedPing()
+    if (this.props.auth.isAuthenticated()) {
+      document.body.style.backgroundImage = "url('./images/mock_back2.png')"
+    } else {
+      document.body.style.backgroundImage = "url('./images/mock_background.png')"
+    }
   }
 
   securedPing() {
@@ -27,6 +32,10 @@ class Home extends Component {
     this.props.auth.login();
   }
 
+  logout() {
+    this.props.auth.logout();
+  }
+
   render() {
     const { isAuthenticated } = this.props.auth;
     const { message } = this.state;
@@ -34,40 +43,20 @@ class Home extends Component {
       <div className="container">
         {
           isAuthenticated() && (
-            <div>
-              <h4>
-                You are logged in!
-              </h4>
-              <br />
-              <h2>
-                Back-end Message:
-              </h2>
-              <h4>
-                {message}
-              </h4>
-            </div>
+            <div />
+            // <div className="main-container">
+            //   <div className="main-tittle">Welcome</div>
+            //   <div className="main-info">A smarter and more flexible way of understanding data to generate insights for better decision making.</div>
+            //   <div className="brokerage-logout-icon" onClick={this.logout.bind(this)}></div>
+            // </div>
           )
         }
         {
           !isAuthenticated() && (
-            <div>
-              <h4>
-                You are not logged in! Please{' '}
-                <a
-                  style={{ cursor: 'pointer' }}
-                  onClick={this.login.bind(this)}
-                >
-                  Log In
-                  </a>
-                {' '}to continue.
-              </h4>
-              <br />
-              <h2>
-                Back-end Message:
-              </h2>
-              <h4>
-                {message}
-              </h4>
+            <div className="main-container">
+              <div className="main-tittle">General Ledger</div>
+              <div className="main-info">A smarter and more flexible way of understanding data to generate insights for better decision making.</div>
+              <div className="brokerage-login-icon" onClick={this.login.bind(this)}></div>
             </div>
           )
         }
