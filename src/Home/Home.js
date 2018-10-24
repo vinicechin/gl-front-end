@@ -38,25 +38,21 @@ class Home extends Component {
 
   render() {
     const { isAuthenticated } = this.props.auth;
-    const { message } = this.state;
     return (
-      <div className="container">
+      <div>
         {
           isAuthenticated() && (
-            <div />
-            // <div className="main-container">
-            //   <div className="main-tittle">Welcome</div>
-            //   <div className="main-info">A smarter and more flexible way of understanding data to generate insights for better decision making.</div>
-            //   <div className="brokerage-logout-icon" onClick={this.logout.bind(this)}></div>
-            // </div>
+            // <div />
+            <div className="brokerage-logout-icon" onClick={this.logout.bind(this)}></div>
           )
         }
         {
           !isAuthenticated() && (
-            <div className="main-container">
-              <div className="main-tittle">General Ledger</div>
-              <div className="main-info">A smarter and more flexible way of understanding data to generate insights for better decision making.</div>
-              <div className="brokerage-login-icon" onClick={this.login.bind(this)}></div>
+            <div className="login-container">
+              <div className="login-tittle">General Ledger</div>
+              <div className="login-info">A smarter and more flexible way of understanding data to generate insights for better decision making.</div>
+              {/* <div className="brokerage-login-icon" onClick={this.login.bind(this)}></div> */}
+              <div className="brokerage-login-btn" onClick={this.login.bind(this)}>Login</div>
             </div>
           )
         }

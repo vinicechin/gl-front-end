@@ -1,15 +1,6 @@
 body {
   height: 100%;
-  /* background: url('../public/images/mock_background.png'); */
   background-size: cover;
-}
-
-.back {
-  background: url('../public/images/mock_back2.png');
-}
-
-.app-container {
-  height: 100%;
 }
 
 .navbar-header {
@@ -30,7 +21,7 @@ body {
   margin-left: 195px;
 }
 
-.brokerage-note-icon {
+.brokerage-notebook-icon {
   background: url('../public/images/Image.png');
   background-size: cover;
   height: 342px;	
@@ -42,46 +33,58 @@ body {
   background: url('../public/images/Button.png');
   background-size: cover;
   height: 110px;
-  width: 240px;
+  width: 212px;
   margin-left:-32px;
+  cursor: pointer;
 }
 
 .brokerage-logout-icon {
   background: url('../public/images/Logout.png');
   background-size: cover;
   height: 110px;
-  width: 240px;
-  margin-left:-32px;
-}
-
-.main-container {
+  width: 212px;
   margin-left: 195px;
   margin-top: 262px;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
-.main-tittle {
+.login-container {
+  margin-left: 195px;
+  margin-top: 180px;
+}
+
+.login-tittle {
   height: 53px;	
-  width: 311px;	
+  width: 335px;	
   color: #2A2C2A;	
-  font-family: "Roboto";	
+  font-family: "Roboto", sans-serif;
   font-size: 45px;	
   font-weight: 900;	
   line-height: 53px;
 }
 
-.main-info {
+.login-info {
   height: 115px;	
   width: 336px;	
   color: #939393;	
-  font-family: "Roboto";	
+  font-family: "Roboto", sans-serif;
   font-size: 18px;	
   font-weight: 300;	
   line-height: 21px;
 }
 
-.main-login-btn {
+.brokerage-login-btn {
+  border-radius: 5px;
+  width: 180px;
+  height: 50px;
+  background-color: #fc8420;
+  color: #fcfcfc;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
 
+.brokerage-login-btn:hover {
+  color: #CCCCCC;
+  cursor: pointer;
 }

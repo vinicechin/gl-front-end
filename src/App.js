@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Navbar, Button } from 'react-bootstrap';
-import { Redirect } from 'react-router-dom'
+import { Navbar } from 'react-bootstrap';
+import { Redirect } from 'react-router-dom';
 
 import './App.css';
+import './history';
 
 class App extends Component {
   goTo(route) {
@@ -19,9 +20,11 @@ class App extends Component {
 
   render() {
     const { isAuthenticated } = this.props.auth;
+    const { pathname } = this.props.location;
+    const hasToRedirect = pathname === '/'
 
     return (
-      <div className="app-container">
+      <div>
         {
           !isAuthenticated() && (
             <Navbar fluid>
@@ -31,11 +34,16 @@ class App extends Component {
             </Navbar>
           )
         }
-        < Redirect
-          to={{
-            pathname: '/home',
-          }}
-        />
+        {
+          hasToRedirect &&
+          (
+            < Redirect
+              to={{
+                pathname: '/home',
+              }}
+            />
+          )
+        }
       </div>
     );
   }
