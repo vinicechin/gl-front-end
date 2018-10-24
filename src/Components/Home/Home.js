@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { API_URL } from './../constants';
+import { API_URL } from '../../Utils/constants';
 import axios from 'axios';
 
 class Home extends Component {
@@ -51,7 +51,6 @@ class Home extends Component {
             <div className="login-container">
               <div className="login-tittle">General Ledger</div>
               <div className="login-info">A smarter and more flexible way of understanding data to generate insights for better decision making.</div>
-              {/* <div className="brokerage-login-icon" onClick={this.login.bind(this)}></div> */}
               <div className="brokerage-login-btn" onClick={this.login.bind(this)}>Login</div>
             </div>
           )

@@ -3,7 +3,7 @@ import { Navbar } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom';
 
 import './App.css';
-import './history';
+import './Utils/history';
 
 class App extends Component {
   goTo(route) {
