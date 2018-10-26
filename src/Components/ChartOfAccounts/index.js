@@ -112,7 +112,7 @@ class ChartOfAccounts extends Component {
     render() {
         const data = this.state.data
         return (
-            <div>
+            <div className="charts-container">
                 <div className="accounts-title-container">
                     <div className="accounts-title">Chart of Accounts</div>
                     <div className="accounts-btn-container">

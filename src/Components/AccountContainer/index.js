@@ -46,6 +46,7 @@ class AccountContainer extends Component {
                         <Collapse
                             isOpened={this.state.isOpened}
                             hasNestedCollapse={true}
+                            forceInitialAnimation
                         >
                             <div className="accounts-details-container">
                                 {

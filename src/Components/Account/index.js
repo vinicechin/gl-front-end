@@ -62,7 +62,7 @@ class Account extends Component {
                 </div>
                 {
                     account.subacc &&
-                    <Collapse isOpened={this.state.isOpened}>
+                    <Collapse isOpened={this.state.isOpened} forceInitialAnimation >
                         {
                             account.subacc.map((subAcc, is) => (
                                 <SubAccount key={is} account={subAcc} />
