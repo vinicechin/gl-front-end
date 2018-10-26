@@ -51,6 +51,8 @@ class ChartOfAccounts extends Component {
                 this.addAccount(newData, account, classification)
             })
         }
+
+        this.setState({ data: newData })
     }
 
     getClassification(account) {
@@ -93,7 +95,6 @@ class ChartOfAccounts extends Component {
                 }
             }
         }
-        this.setState({ data: newData })
     }
 
     searchTree(matchingId, dataArray) {
