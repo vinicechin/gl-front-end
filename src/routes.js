@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Router } from 'react-router-dom';
 import App from './App';
-import Home from './components/Home/Home';
-import Callback from './components/Callback/Callback';
+import Home from './components/Home';
+import Callback from './components/Callback';
 import Auth from './components/Auth/Auth';
 import history from './utils/history';
 
