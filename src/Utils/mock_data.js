@@ -46,16 +46,7 @@ export default [
             name: "Other Primary"
         },
         parent: {
-            id: 2,
-            name: "acc_3",
-            type: {
-                name: "Expense",
-                classification: "Expense"
-            },
-            subtype: {
-                name: "Primary"
-            },
-            parent: null
+            id: 2
         }
     },
     {
@@ -69,16 +60,7 @@ export default [
             name: "Other Primary"
         },
         parent: {
-            id: 3,
-            name: "acc_4",
-            type: {
-                name: "Expense",
-                classification: "Expense"
-            },
-            subtype: {
-                name: "Primary"
-            },
-            parent: null
+            id: 3
         }
     }
 ]
