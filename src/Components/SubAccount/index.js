@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import "./index.css";
-
 class SubAccount extends Component {
     render() {
         const account = this.props.account

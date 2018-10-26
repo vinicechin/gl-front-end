@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Router } from 'react-router-dom';
 import App from './App';
-import Home from './Components/Home/Home';
-import Callback from './Components/Callback/Callback';
-import Auth from './Components/Auth/Auth';
-import history from './Utils/history';
+import Home from './components/Home/Home';
+import Callback from './components/Callback/Callback';
+import Auth from './components/Auth/Auth';
+import history from './utils/history';
 
 const auth = new Auth();
 

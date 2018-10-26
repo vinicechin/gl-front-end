@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { API_URL } from '../../Utils/constants';
+import { API_URL } from '../../utils/constants';
 import axios from 'axios';
 
 import AccountContainer from '../AccountContainer';
-import './index.css';
 
 const data = [
     {

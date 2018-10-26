@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Navbar } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom';
 
-import './App.css';
-import './Utils/history';
+import './utils/history';
 
 class App extends Component {
   goTo(route) {

@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretUp, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 import Account from '../Account'
-import './index.css';
 
 class AccountContainer extends Component {
     componentWillMount() {
