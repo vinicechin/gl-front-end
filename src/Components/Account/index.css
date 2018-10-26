@@ -1,0 +1,73 @@
+.account-details {
+    width: 100%;
+    min-height: 50px;
+}
+
+.account-details-header {
+    display: flex;
+}
+
+.details-collapse-btn {
+    border: 0px;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.last-account-detail {
+    border-bottom: 1px solid #e9ecf5;
+}
+
+.account-details-components {
+    display: flex;
+    width: 100%;
+}
+
+.account-details-description {
+    display: flex;
+    width: 22.5%;
+    padding-left: 20px;
+    padding-top: 16.5px;
+}
+
+.account-details-component-item {
+    width: 22.5%;
+    padding-left: 20px;
+    padding-top: 16.5px;
+}
+
+.account-details-with-collapse {
+    padding-left: 10px !important;
+}
+
+.account-details-component-id {
+    width: 15.5%;
+    padding-left: 20px;
+    padding-top: 16.5px;
+}
+
+.account-details-component-btn {
+    width: 15.5%;
+    padding-left: 20px;
+    padding-top: 16.5px;
+}
+
+.account-description-label {
+    color: #677592;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.account-item-label {
+    color: #677592;
+    font-family: "Open Sans";
+    font-size: 14px;
+}
+
+.account-btn-label {
+    color: #698AFE;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
