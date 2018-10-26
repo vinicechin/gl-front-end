@@ -176,7 +176,6 @@ class ChartOfAccounts extends Component {
                 }
             }
         }
-        // console.log(this.state)
         this.setState({ data: newData })
     }
 

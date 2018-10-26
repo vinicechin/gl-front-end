@@ -14,7 +14,6 @@ class Account extends Component {
         this.setState({
             isOpened: !this.state.isOpened
         })
-        console.log(this.state.isOpened)
     }
 
     render() {
