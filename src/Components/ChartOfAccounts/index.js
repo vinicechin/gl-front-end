@@ -124,7 +124,7 @@ class ChartOfAccounts extends Component {
                     <div className="accounts-table-header-item">NAME</div>
                     <div className="accounts-table-header-item">TYPE</div>
                     <div className="accounts-table-header-item">SUBTYPE</div>
-                    <div className="accounts-table-header-item">REFERENCE ID</div>
+                    <div className="accounts-table-header-id">REFERENCE ID</div>
                     <div className="accounts-table-header-empty"></div>
                 </div>
                 <hr className="accounts-table-header-separator" />
