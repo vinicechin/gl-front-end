@@ -35,11 +35,6 @@ class SubAccount extends Component {
                         <SubAccount key={is} account={subAcc} tabIndex={tabIndex + 1} />
                     ))
                 }
-                {
-                    !account.subacc && (
-                        <div></div>
-                    )
-                }
             </div>
         );
     }
