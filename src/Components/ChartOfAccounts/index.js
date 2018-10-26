@@ -22,7 +22,7 @@ class ChartOfAccounts extends Component {
 
     componentDidMount() {
         this.callApi()
-        document.body.style.backgroundImage = null
+        // document.body.style.backgroundImage = null
     }
 
     callApi() {

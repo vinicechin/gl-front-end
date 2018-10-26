@@ -17,8 +17,12 @@ class AccountContainer extends Component {
     }
 
     render() {
+        const dataArray = this.props.dataArray
         return (
-            <div className="accounts-container">
+            <div
+                className="accounts-container"
+                style={this.state.isOpened ? {} : { paddingBottom: '9.5px' }}
+            >
                 <div className="accounts-container-header">
                     <div
                         className="container-collapse-btn"
@@ -36,20 +40,23 @@ class AccountContainer extends Component {
                         {this.props.name}
                     </div>
                 </div>
-                <Collapse isOpened={this.state.isOpened}>
-                    <div className="accounts-details-container">
-                        {
-                            this.props.dataArray && this.props.dataArray.map((e, i) => (
-                                <Account key={i} account={e} isLast={i === this.props.dataArray.length - 1} />
-                            ))
-                        }
-                        {
-                            !this.props.dataArray && (
-                                <div>Error loading data</div>
-                            )
-                        }
+                {
+                    dataArray &&
+                    <div className="accounts-content-container">
+                        <Collapse
+                            isOpened={this.state.isOpened}
+                            hasNestedCollapse={true}
+                        >
+                            <div className="accounts-details-container">
+                                {
+                                    dataArray.map((e, i) => (
+                                        <Account key={i} account={e} isLast={i === dataArray.length - 1} />
+                                    ))
+                                }
+                            </div>
+                        </Collapse>
                     </div>
-                </Collapse>
+                }
             </div>
         );
     }

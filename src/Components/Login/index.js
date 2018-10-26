@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Login extends Component {
     componentDidMount() {
-        document.body.style.backgroundImage = "url('./images/mock_background.png')"
+        // document.body.style.backgroundImage = "url('./images/mock_background.png')"
     }
 
     login() {
